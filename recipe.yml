@@ -1,0 +1,17 @@
+name: 'Moderate all content'
+description: 'Adds content moderation from core to all content types.'
+type: 'Site'
+recipes:
+  - core/recipes/editorial_workflow
+  - core/recipes/content_editor_role
+config:
+  actions:
+    workflows.workflow.editorial:
+      addNodeTypes: '*'
+    user.role.content_editor:
+      grantPermissions:
+        - 'use editorial transition archive'
+        - 'use editorial transition archived_draft'
+        - 'use editorial transition archived_published'
+        - 'use editorial transition create_new_draft'
+        - 'use editorial transition publish'

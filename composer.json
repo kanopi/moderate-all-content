@@ -1,0 +1,13 @@
+{
+    "name": "kanopi/moderate-all-content",
+    "description": "Adds content moderation from core to all content types.",
+    "keywords": ["recipe", "Drupal recipes", "drupal recipe"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Jim Birch",
+            "role": "Maintainer"
+        }
+    ]
+}
