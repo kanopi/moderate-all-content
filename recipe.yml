@@ -7,7 +7,10 @@ recipes:
 config:
   actions:
     workflows.workflow.editorial:
+      # Wildcard for all nodes.
       addNodeTypes: '*'
+      # Opt only certain content types into moderation.
+      # addNodeTypes: [sa_page, sa_post]
     user.role.content_editor:
       grantPermissions:
         - 'use editorial transition archive'
